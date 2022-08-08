@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Tic Toc Toe</title>
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css"
+    />
+    <link rel="stylesheet" href="style.css" />
+    <link rel="icon" href="images/unnamed.png" type="image/icon" />
+  </head>
+  <body id="index">
+    <div class="t-container">
+      <div class="turn-boxes">
+        <button id="x-turn" type="button">X's turn</button>
+        <button id="o-turn" type="button">O's turn</button>
+      </div>
+
+      <div class="boxes">
+        <button onclick="btn0click()" id="0" type="button">&nbsp;</button>
+        <button onclick="btn1click()" id="1" type="button">&nbsp;</button>
+        <button onclick="btn2click()" id="2" type="button">&nbsp;</button>
+        <button onclick="btn3click()" id="3" type="button">&nbsp;</button>
+        <button onclick="btn4click()" id="4" type="button">&nbsp;</button>
+        <button onclick="btn5click()" id="5" type="button">&nbsp;</button>
+        <button onclick="btn6click()" id="6" type="button">&nbsp;</button>
+        <button onclick="btn7click()" id="7" type="button">&nbsp;</button>
+        <button onclick="btn8click()" id="8" type="button">&nbsp;</button>
+      </div>
+      <p class="status-of-match"></p>
+      <a href="selectPlayer.html" class="restart">Restart</a>
+    </div>
+
+    <script src="turn.js"></script>
+    <script src="script.js"></script>
+  </body>
+</html>

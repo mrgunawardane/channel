@@ -1,0 +1,200 @@
+*{
+    padding: 0;
+    margin: 0;
+    font-family: 'poppins', sans-serif;
+    box-sizing: border-box;
+}
+body{
+    border: none;
+    background: #17a3b8;
+    justify-content: center;
+    align-items: center;
+    display: flex;
+}
+.select-player-container{
+    width: 400px;
+    height: 300px;
+    background: #fff;
+    border-radius: 20px;
+    margin-top: 150px;
+    box-shadow: rgba(50, 50, 93, 0.25) 0px 50px 100px -20px, rgba(0, 0, 0, 0.3) 0px 30px 60px -30px;
+}
+.select-player-container h3{
+    font-size: 40px;
+    font-weight: 600;
+    text-align: center;
+    margin: 20px 0  10px 0;
+    color: #17a3b8;
+}
+.select-player-container hr{
+    width: 80%;
+    margin-left: 10%;
+    color: lightgray;
+}
+.select-player-container p{
+    text-align: center;
+    margin: 3px 0 8px 0;
+    font-size: small;
+}
+.select-player-container h5{
+    margin: 30px 0 5px 10%;
+    font-size: 15px;
+    font-weight: 500;
+}
+.select-player-container .players-selection{
+    /* border: 1px solid black; */
+    width: 300px;
+    height: 70px;
+    margin: 20px 0 0 50px;
+}
+.players-selection button{
+    height: 50px;
+    width: 120px;
+    border-radius: 10px;
+    border: none;
+    outline: none;
+    background:#17a3b8;
+    color: #fff;
+    font-size: large;
+    font-weight: 600;
+    margin: 10px;
+    cursor: pointer;
+    box-shadow: rgba(50, 50, 93, 0.25) 0px 50px 100px -20px, rgba(0, 0, 0, 0.3) 0px 30px 60px -30px,
+    rgba(50, 50, 93, 0.25) 0px 50px 100px -20px, rgba(0, 0, 0, 0.3) 0px 30px 60px -30px;
+}
+.players-selection button:hover{
+    box-shadow: rgba(50, 50, 93, 0.25) 0px 50px 100px -20px, rgba(0, 0, 0, 0.3) 0px 30px 60px -30px;
+    transition: 0.4s;
+}
+#player1.active{
+    box-shadow: rgba(50, 50, 93, 0.25) 0px 30px 60px -12px inset, rgba(0, 0, 0, 0.3) 0px 18px 36px -18px inset;
+    background: #fff;
+    color: #17a3b8;
+}
+#player2.active{
+    box-shadow: rgba(50, 50, 93, 0.25) 0px 30px 60px -12px inset, rgba(0, 0, 0, 0.3) 0px 18px 36px -18px inset;
+    background: #fff;
+    color: #17a3b8;
+}
+.select-player-container h2{
+    text-align: center;
+    margin-top: 15px;
+    color: #cc0202;
+    opacity: 0;
+}
+.select-player-container h2.active{
+    opacity: 1;
+}
+
+/* game page  */
+
+.t-container{
+    width: 350px;
+    height: 450px;
+    background: none;
+    margin-top: 60px;
+    justify-content: center;
+    /* border: 1px solid #fff; */
+}
+.turn-boxes{
+    height: 70px;
+    width: 320px;
+    margin: 15px;
+    background: #fff;
+    border-radius: 8px;
+    justify-content: center;
+    align-items: center;
+    display:flex;
+}
+.turn-boxes button{
+    height: 42px;
+    width: 120px;
+    border: none;
+    border-radius: 5px;
+    margin: 12px;
+    font-size: large;
+    font-weight: 600;
+}
+#x-turn{
+    background: #fff;
+    color: #17a3b8;
+}
+#o-turn{
+    background: #fff;
+    color: #17a3b8;
+}
+#o-turn.active{
+    background: #17a3b8;
+    color: #fff;
+}
+#x-turn.active{
+    background: #17a3b8;
+    color: #fff;
+}
+.boxes{
+    width: 320px;
+    /* border: 1px solid #fff; */
+    height: 300px;
+    margin: 15px;
+    position: fixed;
+    padding: 30px 10px 10px 35px;
+}
+.boxes button{
+    width: 70px;
+    margin: 5px;
+    height: 70px;
+    border-radius: 5px;
+    border: none;
+    outline: none;
+    cursor: pointer;
+    font-size: 40px;
+    font-weight: 550;
+    color: #17a3b8;
+}
+.t-container .status-of-match{
+    border: 1px solid #fff;
+    width: 80%;
+    height: 45px;
+    border-radius: 10px;
+    border: none;
+    color: #fff;
+    font-size: large;
+    padding-top: 10px;
+    opacity: 0;
+    text-align: center;
+    /* position: absolute; */
+    margin-left: 10%;
+}
+.t-container .status-of-match.active{
+    background-color: #bd0d3d;
+    opacity: 1;
+}
+.t-container .status-of-match.active1{
+    background-color: #00ad7f;
+    opacity: 1;
+}
+.t-container .status-of-match.active2{
+    background-color: #7e7e7e;
+    opacity: 1;
+}
+.t-container a{
+    border: 1px solid #fff;
+    text-decoration: none;
+    position: absolute;
+    height: 30px;
+    width: 100px;
+    border-radius: 10px;
+    text-align: center;
+    padding-top: 6px;
+    cursor: pointer;
+    margin-left: 124px;
+    color: #fff;
+    background: #cc0202;
+    border: none;
+    margin-top: 260px;
+    opacity: 0;
+    box-shadow: rgba(50, 50, 93, 0.25) 0px 50px 100px -20px, rgba(0, 0, 0, 0.3) 0px 30px 60px -30px;
+}
+.t-container a.active{
+    opacity: 1;
+}
